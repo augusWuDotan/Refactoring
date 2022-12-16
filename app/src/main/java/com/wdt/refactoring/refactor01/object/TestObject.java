@@ -1,6 +1,7 @@
 package com.wdt.refactoring.refactor01.object;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -40,5 +41,11 @@ public class TestObject {
 
     public void addTestStringList(String testString) {
         testStringList.add(testString);
+    }
+
+    //增加 addTestStringVarags method
+    //並修改model建立方式
+    public void addTestStringVarags(String... testStrings) {
+        Collections.addAll(testStringList, testStrings);
     }
 }

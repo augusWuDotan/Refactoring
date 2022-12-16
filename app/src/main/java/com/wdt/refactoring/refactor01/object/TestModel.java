@@ -18,7 +18,7 @@ public class TestModel {
 //        testObject.getTestStringList().add("123");
 //        testObject.getTestStringList().add("123");
 
-//        //共用字串、清空陣列
+        //共用字串、清空陣列
 //        String inputString = "123";
 //        List<String> testStringList = new ArrayList<>();
 //        testStringList.add(inputString);
@@ -28,10 +28,15 @@ public class TestModel {
 //        );
 
         //增加 addTestStringList method
+//        String inputString = "123";
+//        testObject.clearTestStringList();
+//        testObject.addTestStringList(inputString);
+//        testObject.addTestStringList(inputString);
+
+        //增加 addTestStringList method(varags)
         String inputString = "123";
         testObject.clearTestStringList();
-        testObject.addTestStringList(inputString);
-        testObject.addTestStringList(inputString);
+        testObject.addTestStringVarags(inputString,inputString);
     }
 }
 
