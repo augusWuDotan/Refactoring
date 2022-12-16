@@ -31,4 +31,14 @@ public class TestObject {
     public void setTestStringList(List<String> testStringList) {
         this.testStringList = testStringList;
     }
+
+    //增加 addTestStringList method
+    //並修改model建立方式
+    public void clearTestStringList() {
+        this.testStringList.clear();
+    }
+
+    public void addTestStringList(String testString) {
+        testStringList.add(testString);
+    }
 }

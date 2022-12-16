@@ -17,14 +17,21 @@ public class TestModel {
         //加入測試列表文字項目 //改用Set定義
 //        testObject.getTestStringList().add("123");
 //        testObject.getTestStringList().add("123");
-        //or
+
+//        //共用字串、清空陣列
+//        String inputString = "123";
+//        List<String> testStringList = new ArrayList<>();
+//        testStringList.add(inputString);
+//        testStringList.add(inputString);
+//        testObject.setTestStringList(
+//                testStringList
+//        );
+
+        //增加 addTestStringList method
         String inputString = "123";
-        List<String> testStringList = new ArrayList<>();
-        testStringList.add(inputString);
-        testStringList.add(inputString);
-        testObject.setTestStringList(
-                testStringList
-        );
+        testObject.clearTestStringList();
+        testObject.addTestStringList(inputString);
+        testObject.addTestStringList(inputString);
     }
 }
 
