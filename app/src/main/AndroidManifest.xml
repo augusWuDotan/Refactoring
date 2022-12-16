@@ -14,7 +14,7 @@
         android:theme="@style/Theme.Refactoring"
         tools:targetApi="31">
         <activity
-            android:name=".ObjectActivity"
+            android:name=".refactor01.ObjectActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
